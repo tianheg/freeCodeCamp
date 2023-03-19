@@ -1,11 +1,11 @@
 // https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form
-import Link from 'next/link';
+import Home from '../home';
 import styles from './page.module.scss'
 
 export default function SurbeyForm() {
   return (
     <main className={styles.main}>
-      <Link className={styles.home} href="/">Home</Link>
+      <Home />
       <h1 className={styles.title}>A Survey Form about your favorite movies</h1>
       <p className={styles.description}>
         It&#39;s a survey form to collect data about movies.
