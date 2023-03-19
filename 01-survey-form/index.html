@@ -1,0 +1,65 @@
+<!-- https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Survey Form about your favorite movies</title>
+  <link rel="stylesheet" href="01.css">
+</head>
+
+<body>
+  <h1 id="title">A Survey Form about your favorite movies</h1>
+  <p id="description">It's a survey form to collect data about movies.</p>
+  <form id="survey-form">
+    <label for="name" id="name-label">
+      Name: <input id="name" name="name" type="text" placeholder="Enter your name" required>
+    </label>
+
+    <label for="email" id="email-label">
+      Email: <input id="email" name="email" type="email" placeholder="Enter your Email" required>
+    </label>
+
+    <label for="number" id="number-label">
+      How many movies have you watched? <input id="number" name="number" type="number" placeholder="Enter The number of movies you have watched" min="1"
+        max="10000">
+    </label>
+
+    <p>What's your favorite movies?</p>
+    <select id="dropdown">
+      <option value="">-- Please choose an option --</option>
+      <option value="la-la-land">La La Land</option>
+      <option value="watchmen">Watchmen</option>
+      <option value="the-great-train-robbery">The Great Train Robbery</option>
+    </select>
+
+    <p>What's Your gender?</p>
+    <label for="male">
+      <input class="inline" type="radio" id="male" name="gender" value="male"> Male
+    </label>
+
+    <label for="female">
+      <input class="inline" type="radio" id="female" name="gender" value="female"> Female
+    </label>
+
+    <p>What kind of moves do you like?</p>
+    <label for="type1">
+      <input class="inline" type="checkbox" id="type1" name="sf" value="Science Fiction"> Science Fiction
+    </label>
+
+    <label for="type2">
+      <input class="inline" type="checkbox" id="type2" name="co" value="Comedy"> Comedy
+    </label>
+
+    <label for="type3">
+      <input class="inline" type="checkbox" id="type3" name="lo" value="Love"> Love
+    </label>
+
+    <label for="textarea">You may want to say:</label>
+    <textarea id="textarea" name="textarea" rows="5" cols="18"></textarea>
+    <button id="submit">Submit</button>
+  </form>
+</body>
+
+</html>
