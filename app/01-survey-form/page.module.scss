@@ -1,20 +1,28 @@
-body {
+.home {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.main {
   width: 100%;
   height: 100vh;
   margin: 0;
-  background-color: #1b1b32;
+  background-color: rgb(27, 27, 50);
   color: #f5f6f7;
   font-family: serif;
   font-size: 16px;
 }
 
-#title,
-#description {
+.title,
+.description {
   margin: 1em auto;
+}
+
+.description {
   text-align: center;
 }
 
-#survey-form {
+.form {
   width: 60vw;
   max-width: 500px;
   min-width: 300px;
@@ -22,21 +30,28 @@ body {
   padding-bottom: 2em;
 }
 
-label {
+.label {
   display: block;
   margin: 0.5rem 0;
 }
 
-input,
-select,
-textarea {
+.name,
+.email,
+.number {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.input,
+.dropdown,
+.textarea {
   margin: 10px 0 0 0;
   width: 100%;
   min-height: 2em;
 }
 
-input,
-textarea {
+.input,
+.textarea {
   background-color: #0a0a23;
   border: 1px solid #0a0a23;
   color: #fff;
@@ -48,7 +63,7 @@ textarea {
   vertical-align: middle;
 }
 
-#submit {
+.submit {
   display: block;
   width: 60%;
   margin: 1em auto;
