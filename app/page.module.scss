@@ -15,3 +15,10 @@
 .link {
   color: white;
 }
+
+@media (max-width: 480px) {
+  .title {
+    margin: 0;
+    // word-break: break-word;
+  }
+}

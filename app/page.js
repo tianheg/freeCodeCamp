@@ -5,9 +5,11 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <h1 className={styles.title}>
-        <span style={{ fontFamily: inter.style.fontFamily }}>
-          freeCodeCamp projects
-        </span>
+        free
+        <wbr />
+        Code
+        <wbr />
+        Camp projects
       </h1>
 
       <ul className={styles.projects}>
