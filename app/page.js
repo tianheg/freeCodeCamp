@@ -18,6 +18,11 @@ export default function Home() {
             01 Survey Form
           </Link>
         </li>
+        <li>
+          <Link className={styles.link} href="/02-rothko-painting">
+            02 Rothko Painting
+          </Link>
+        </li>
       </ul>
     </main>
   )
