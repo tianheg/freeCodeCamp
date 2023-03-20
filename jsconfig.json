@@ -1,7 +1,10 @@
 {
   "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
     "paths": {
       "@/*": ["./*"]
     }
-  }
+  },
+  "exclude": ["node_modules"]
 }
