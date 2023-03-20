@@ -18,5 +18,6 @@
   "background_color": "#fff",
   "display": "standalone",
   "orientation": "portrait-primary",
+  "scope": "/",
   "start_url": "/"
 }
