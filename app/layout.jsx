@@ -3,7 +3,7 @@ import './globals.scss'
 export const metadata = {
   title: 'freeCodeCamp projects',
   description: 'Created by tianheg',
-  themeColor: 'white',
+  themeColor: '#fff',
   manifest: '/manifest.json',
   icons: {
     icon: [
