@@ -2,8 +2,13 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <Link style={{ color: 'white', fontSize: '1.5rem' }} href="/">
-      Home
-    </Link>
+    <div style={{ textAlign: 'center' }}>
+      <Link
+        style={{ color: 'white', fontSize: '1.5rem', textAlign: 'center' }}
+        href="/"
+      >
+        Home
+      </Link>
+    </div>
   )
 }
