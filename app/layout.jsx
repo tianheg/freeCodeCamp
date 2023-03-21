@@ -1,3 +1,4 @@
+import ClientHome from './client-home'
 import './globals.scss'
 
 export const metadata = {
@@ -23,7 +24,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ClientHome />
+        {children}
+      </body>
     </html>
   )
 }

@@ -1,5 +1,4 @@
 // https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form
-import Home from '../home';
 import getTitle from '@/utils/getTitle'
 import styles from './page.module.scss'
 
@@ -12,7 +11,6 @@ export async function generateMetadata({ params }) {
 export default function SurbeyForm() {
   return (
     <main className={styles.main}>
-      <Home />
       <h1 className={styles.title}>A Survey Form about your favorite movies</h1>
       <p className={styles.description}>
         It&#39;s a survey form to collect data about movies.

@@ -2,7 +2,6 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import Home from '../home'
 import getTitle from '@/utils/getTitle'
 import styles from './page.module.scss'
 
@@ -15,8 +14,6 @@ export async function generateMetadata({ params }) {
 export default function RothkoPainting() {
   return (
     <main className={styles.main}>
-      <Home />
-
       <div className={styles.menu}>
         <h1 className={styles.title}>CAMPER CAFE</h1>
         <p className={styles.established}>Est. 2020</p>
