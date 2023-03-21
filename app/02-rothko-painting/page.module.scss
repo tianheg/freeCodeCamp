@@ -11,7 +11,6 @@
   color: #f5f6f7;
   font-family: serif;
   font-size: 16px;
-
   box-sizing: unset;
 }
 
@@ -26,8 +25,7 @@
 .frame {
   border: 50px solid rgba(255, 255, 255, .7);
   width: 500px;
-  // padding: 50px;
-  margin: 20px auto;
+  margin: 40px auto;
 }
 
 .one {
@@ -69,4 +67,13 @@
 .link {
   color: white;
   text-decoration: none;
+}
+
+@media (max-width: 565px) {
+  .frame {
+    width: 400px;
+  }
+  .canvas {
+    width: 300px;
+  }
 }
