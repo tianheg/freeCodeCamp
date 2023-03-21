@@ -1,6 +1,13 @@
 // https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form
 import Home from '../home';
+import getTitle from '@/utils/getTitle'
 import styles from './page.module.scss'
+
+export async function generateMetadata({ params }) {
+  return {
+    title: getTitle(),
+  }
+}
 
 export default function SurbeyForm() {
   return (
@@ -12,7 +19,7 @@ export default function SurbeyForm() {
       </p>
 
       <form className={styles.form}>
-        <label className={styles.label} for="name" id="name-label">
+        <label className={styles.label} htmlFor="name" id="name-label">
           Name:{' '}
           <input
             className={[styles.input, styles.name].join(' ')}
@@ -24,7 +31,7 @@ export default function SurbeyForm() {
           />
         </label>
 
-        <label className={styles.label} for="email" id="email-label">
+        <label className={styles.label} htmlFor="email" id="email-label">
           Email:{' '}
           <input
             className={[styles.input, styles.email].join(' ')}
@@ -36,7 +43,7 @@ export default function SurbeyForm() {
           />
         </label>
 
-        <label className={styles.label} for="number" id="number-label">
+        <label className={styles.label} htmlFor="number" id="number-label">
           How many movies have you watched?{' '}
           <input
             className={[styles.input, styles.number].join(' ')}
@@ -60,7 +67,7 @@ export default function SurbeyForm() {
         </select>
 
         <p>What&#39;s Your gender?</p>
-        <label className={styles.label} for="male">
+        <label className={styles.label} htmlFor="male">
           <input
             className={styles.inline}
             type="radio"
@@ -71,7 +78,7 @@ export default function SurbeyForm() {
           Male
         </label>
 
-        <label className={styles.label} for="female">
+        <label className={styles.label} htmlFor="female">
           <input
             className={styles.inline}
             type="radio"
@@ -83,7 +90,7 @@ export default function SurbeyForm() {
         </label>
 
         <p>What kind of moves do you like?</p>
-        <label className={styles.label} for="type1">
+        <label className={styles.label} htmlFor="type1">
           <input
             className={styles.inline}
             type="checkbox"
@@ -94,7 +101,7 @@ export default function SurbeyForm() {
           Science Fiction
         </label>
 
-        <label className={styles.label} for="type2">
+        <label className={styles.label} htmlFor="type2">
           <input
             className={styles.inline}
             type="checkbox"
@@ -105,7 +112,7 @@ export default function SurbeyForm() {
           Comedy
         </label>
 
-        <label className={styles.label} for="type3">
+        <label className={styles.label} htmlFor="type3">
           <input
             className={styles.inline}
             type="checkbox"
@@ -116,7 +123,9 @@ export default function SurbeyForm() {
           Love
         </label>
 
-        <label className={styles.label} for="textarea">You may want to say:</label>
+        <label className={styles.label} htmlFor="textarea">
+          You may want to say:
+        </label>
         <textarea
           className={styles.textarea}
           id="textarea"

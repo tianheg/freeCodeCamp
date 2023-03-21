@@ -1,6 +1,12 @@
 import Link from 'next/link'
 import styles from './page.module.scss'
 
+export async function generateMetadata({params}) {
+  return {
+    title: 'Home | freeCodeCamp projects',
+  }
+}
+
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -21,6 +27,11 @@ export default function Home() {
         <li>
           <Link className={styles.link} href="/02-rothko-painting">
             02 Rothko Painting
+          </Link>
+        </li>
+        <li>
+          <Link className={styles.link} href="/03-cafe-menu">
+            03 Cafe Menu
           </Link>
         </li>
       </ul>

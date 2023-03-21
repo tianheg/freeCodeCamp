@@ -1,6 +1,13 @@
 // https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-the-css-box-model-by-building-a-rothko-painting/step-45
 import Home from '../home';
+import getTitle from '@/utils/getTitle';
 import styles from './page.module.scss'
+
+export async function generateMetadata({ params }) {
+  return {
+    title: getTitle(),
+  }
+}
 
 export default function RothkoPainting() {
   return (
