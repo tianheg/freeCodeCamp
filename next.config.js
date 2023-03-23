@@ -10,6 +10,14 @@ const nextConfig = withPWA({
     appDir: true,
   },
   reactStrictMode: false,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '*.unsplash.com',
+      },
+    ],
+  },
 })
 
 module.exports = nextConfig
