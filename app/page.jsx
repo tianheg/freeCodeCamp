@@ -34,6 +34,11 @@ export default function Home() {
             03 Cafe Menu
           </Link>
         </li>
+        <li>
+          <Link className={styles.link} href="/04-photo-gallery">
+            04 Photo Gallery
+          </Link>
+        </li>
       </ul>
     </main>
   )
